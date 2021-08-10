@@ -14,9 +14,11 @@ module.exports = {
     // 'plugin:vue/recommended',
     'standard',
   ],
-  rules: {},
+  rules: {
+    'comma-dangle': ['error', 'never'],
+  },
   globals: {
     $: 'readonly',
     moment: 'readonly',
   },
-};
+}
