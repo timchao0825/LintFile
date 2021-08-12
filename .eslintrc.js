@@ -9,13 +9,19 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
-  extends: [
-    'eslint:recommended',
-    // 'plugin:vue/recommended',
-    'standard',
-  ],
+  // extends: ['eslint:recommended', 'plugin:vue/recommended', 'standard'],
+  extends: ['eslint:recommended', 'standard'],
   rules: {
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always',
+        objects: 'always',
+        imports: 'always',
+        exports: 'always',
+        functions: 'always',
+      },
+    ],
   },
   globals: {
     $: 'readonly',
