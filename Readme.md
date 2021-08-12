@@ -8,10 +8,16 @@
 
 ---
 
-#### 可通用版本
+#### 很常用到的
 
 ```bash
-npm install -D @babel/core @bable/preset-env @prettier/plugin-pug babel-eslint eslint@latest eslint-config-standard eslint-config-prettier eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-prettier prettier stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-prettier stylelint-scss
+npm install core-js node-sass sass-loader
+```
+
+#### 通用版本
+
+```bash
+npm install -D @babel/core @bable/preset-env @prettier/plugin-pug babel-eslint eslint@latest eslint-config-standard eslint-config-prettier eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-prettier eslint-plugin-standard prettier stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-prettier stylelint-scss
 ```
 
 #### 適用於 Vue 版本
