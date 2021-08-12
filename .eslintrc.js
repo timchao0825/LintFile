@@ -12,16 +12,7 @@ module.exports = {
   // extends: ['eslint:recommended', 'plugin:vue/recommended', 'standard'],
   extends: ['eslint:recommended', 'standard'],
   rules: {
-    'comma-dangle': [
-      'error',
-      {
-        arrays: 'always',
-        objects: 'always',
-        imports: 'always',
-        exports: 'always',
-        functions: 'always',
-      },
-    ],
+    'comma-dangle': ['error', 'only-multiline'],
   },
   globals: {
     $: 'readonly',
