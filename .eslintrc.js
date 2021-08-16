@@ -12,7 +12,8 @@ module.exports = {
   // extends: ['eslint:recommended', 'plugin:vue/recommended', 'standard'],
   extends: ['eslint:recommended', 'standard'],
   rules: {
-    'comma-dangle': ['error', 'only-multiline']
+    'comma-dangle': ['error', 'only-multiline'],
+    'space-before-function-paren': ['error', 'never']
   },
   globals: {
     $: 'readonly',
