@@ -4,7 +4,22 @@ module.exports = {
   rules: {
     'at-rule-no-unknown': [
       true,
-      { ignoreAtRules: ['mixin', 'extend', 'content'] }
+      {
+        ignoreAtRules: [
+          'mixin',
+          'extend',
+          'content',
+          'include',
+          'function',
+          'return',
+          'if',
+          'else',
+          'each',
+          'warn',
+          'error',
+          'for'
+        ]
+      }
     ], // 禁止使用未知的 at 規則
     'rule-empty-line-before': [
       // 要求或禁止在規則宣告之前有空行
