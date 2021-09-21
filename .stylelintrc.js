@@ -1,7 +1,15 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+  extends: [
+    'stylelint-config-standard',
+    'stylelint-config-prettier',
+    'stylelint-config-sass-guidelines'
+  ],
   plugins: ['stylelint-scss', 'stylelint-order', 'stylelint-prettier'],
   rules: {
+    'property-case': 'lower',
+    'prettier/prettier': true,
+    'selector-max-compound-selectors': 5,
+    'max-nesting-depth': 4,
     'at-rule-no-unknown': [
       true,
       {
@@ -48,5 +56,9 @@ module.exports = {
     'property-no-vendor-prefix': true, // 禁止屬性使用瀏覽器引擎字首
     'value-no-vendor-prefix': true, // 禁止給值新增瀏覽器引擎字首
     'selector-no-vendor-prefix': true // 禁止使用瀏覽器引擎字首
-  }
+  },
+  ignoreFiles: [
+    './node_modules/**/*.{css,scss,sass}',
+    './dist/**/*.{css,scss,sass}'
+  ]
 }
